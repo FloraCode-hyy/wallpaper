@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li onclick="openMenu()">
+                <a href="#">
+                    <span class="icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    <span class="title" style="font-size: 20px;
+                    font-weight: bolder;">WallPapper</span>
+                </a>
+            </li>
+            <li style="display: none;" id="back" onclick="back()">
+                <a href="#">
+                    <span class="icon"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon" id="search" onclick="openMenu()"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <span class="title search-box">
+                        <input type="text" name="title" class="search-text" id="searchTitle"><button type='submit' class="btn" id="searchBtn"></button>
+                    </span>
+                </a>
+            </li>
+            <li onclick="openHome()">
+                <a href="#">
+                    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li onclick="openMine()">
+                <a href="#">
+                    <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <span class="title">My favourite</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- home -->
+    <div class="main home">
+        <!-- 壁纸展示 -->
+        <div class="showpic">
+            <div id="home">
+                <div class="content">
+                    <ul>                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main mine" style="display: none;">
+        <div class="showpic">                
+            <div class="content mineContent">
+            <ul>        
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main details" style="display: none;">
+        <div class="picbox">
+            <img src="" alt="">
+            <button class="btn" id="wall" >WallPapper</button>
+            <button class="btn star" id="star" onclick="starClick(this)" data-start="false">
+                <i class="fa fa-star-o" aria-hidden="true" id="no-star"></i>
+            </button>
+        </div>
+    </div>
+    <div class="main search" style="display: none;">
+        <div class="showpic">
+            <div class="content">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

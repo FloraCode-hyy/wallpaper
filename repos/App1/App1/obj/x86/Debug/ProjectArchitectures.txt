@@ -1,0 +1,2 @@
+C:\Users\yingying_hua\source\repos\App1\App1\App1.csproj;x86
+C:\Users\yingying_hua\source\repos\App1\Bridge\Bridge.csproj;x86
